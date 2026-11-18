@@ -306,6 +306,7 @@ function Equipe() {
 function ChecklistEditor() {
   const { me, tasks, saveTasks, deleteTask } = useData();
   const isAdmin = me.role === 'admin';
+  const [pendingDel, setPendingDel] = useState<string | null>(null);
   const upd = (t: Task, patch: Partial<Task>) => saveTasks([{ ...t, ...patch }]);
   return (
     <>
@@ -324,7 +325,7 @@ function ChecklistEditor() {
               </select>
               <label className="small">Pontos <input type="number" min={0} max={50} value={t.pontos} disabled={!isAdmin} onChange={(e) => upd(t, { pontos: Number(e.target.value) })} style={{ width: 64 }} /></label>
               <label className="small"><input type="checkbox" checked={t.ativo} disabled={!isAdmin} onChange={(e) => upd(t, { ativo: e.target.checked })} /> ativa</label>
-              {isAdmin && <button className="link small" onClick={() => confirm('Excluir atividade? O histórico dela deixa de contar.') && deleteTask(t.id)}>excluir</button>}
+              {isAdmin && <button className="link small" onClick={() => (pendingDel === t.id ? deleteTask(t.id) : setPendingDel(t.id))}>{pendingDel === t.id ? 'confirmar exclusão' : 'excluir'}</button>}
             </div>
           </li>
         ))}

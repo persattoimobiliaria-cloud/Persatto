@@ -1,0 +1,11 @@
+{
+  "name": "Persatto Corretor",
+  "short_name": "Persatto",
+  "description": "Checklist diário, dicas e PDI dos corretores Persatto",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf9f6",
+  "theme_color": "#23332d",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

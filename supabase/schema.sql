@@ -157,14 +157,14 @@ create policy p_pdi_all on public.pdi_goals for all
 
 -- ---------- checklist padrão ----------
 insert into public.tasks (id, ordem, periodo, hora, pontos, titulo, dica) values
- ('t01',1,'manha','08:30',5,'Planejar o dia (3 prioridades)','Abra a agenda e escolha as 3 ações que mais aproximam você de uma venda hoje.'),
- ('t02',2,'manha','09:00',10,'Responder leads novos em até 5 min','Lead respondido em 5 min tem muito mais chance de virar visita. Ligue antes de mandar texto.'),
- ('t03',3,'manha','09:30',10,'Follow-up com 5 clientes','Mande algo útil: um imóvel novo, uma foto, uma notícia do bairro. Nada de "e aí, pensou?".'),
- ('t04',4,'manha','10:30',5,'Postar 1 story ou vídeo','Bastidor de visita, imóvel novo ou dica do bairro. Veja ideias em "Dicas > Gravação".'),
- ('t05',5,'tarde','13:30',10,'Prospectar 3 proprietários','Captação é estoque. Ligue para indicações, placas de "vende-se" e antigos clientes.'),
- ('t06',6,'tarde','15:00',10,'Fazer 1 visita ou apresentação','Confirme a visita 2h antes e leve a ficha do imóvel com 3 diferenciais.'),
- ('t07',7,'tarde','16:30',5,'Atualizar anúncios e fotos','Anúncio com foto boa e preço atualizado recebe mais contatos. Revise 2 por dia.'),
- ('t08',8,'noite','18:00',10,'Registrar atendimentos no CRM','O que não está no CRM não existe. Anote próximo passo e data de cada cliente.'),
- ('t09',9,'noite','18:30',5,'Dar retorno aos proprietários','Proprietário informado renova exclusividade. Conte visitas e feedbacks da semana.'),
- ('t10',10,'noite','19:00',5,'Lançar os números do dia','Toque nos contadores de leads, visitas, captações e propostas. Leva 10 segundos.')
+ ('t01',1,'manha','08:30',5,'Preparação: agenda, funil e 3 metas do dia','Veja no CRM em que etapa as vendas estão travando. Revise a lista dos 100+ e as indicações recebidas.'),
+ ('t02',2,'manha','09:00',10,'Prospecção ativa: novos contatos','Prioridade máxima. Indicados, grupos, portais e bairros. Registre cada lead novo no CRM na hora.'),
+ ('t03',3,'manha','09:30',5,'Enviar captações nos grupos de corretores','Meta: 3x ao dia (manhã, meio do dia e fim da tarde).'),
+ ('t04',4,'manha','10:00',10,'Responder leads em até 1 hora e qualificar','Momento, prazo, financiamento e necessidade. Toda conversa qualificada termina com visita ou avaliação agendada.'),
+ ('t05',5,'manha','11:00',5,'Stories da manhã: bastidor + agenda','Meta: 5 a 10 stories por dia útil. Ideias prontas em Dicas > Gravação.'),
+ ('t06',6,'tarde','14:00',10,'Visita ou avaliação com roteiro','Prepare documentação, chaves e roteiro: abertura, pontos fortes e objeções. Envie proposta quando couber.'),
+ ('t07',7,'tarde','15:30',10,'Follow-up de leads e propostas','É onde mais se perde venda. Nunca termine a conversa sem o próximo passo combinado, com data e hora.'),
+ ('t08',8,'tarde','16:30',5,'Stories da tarde: imóvel/região + enquete','Dica rápida respondendo dúvida real e prova social (chave entregue, proposta enviada), sem expor cliente.'),
+ ('t09',9,'noite','18:00',10,'Atualizar o CRM e revisar o funil','O que avançou e onde travou. Registre o resultado de cada visita no mesmo dia.'),
+ ('t10',10,'noite','18:30',5,'Agenda de amanhã + lançar os números','Prepare o dia seguinte, confira as metas e toque nos contadores. Leva 1 minuto.')
 on conflict (id) do nothing;

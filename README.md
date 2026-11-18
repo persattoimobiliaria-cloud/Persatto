@@ -31,7 +31,7 @@ Sem configuração o app abre em **modo demo** (dados de exemplo salvos no naveg
 5. **O primeiro cadastro vira admin.** Os demais se cadastram pelo link e você libera em *Gestão → Equipe e acessos*.
 
 ## Identidade visual
-As cores ficam em variáveis no topo de `src/styles.css` (`--brand`, `--accent`…) e o ícone em `public/icon.svg` — basta trocar quando chegar o layout oficial.
+Paleta Persatto (verde `#23332D`, areia `#DFCEBC`, bronze `#B59D82`, off-white `#FAF9F6`) em variáveis no topo de `src/styles.css`; ícone em `public/icon.svg`. O checklist padrão resume os 7 blocos da rotina Persatto (preparação, prospecção, atendimento, visitas, follow-up, conteúdo, fechamento) em 10 ações de 1 toque.
 
 ## Próximos passos (V2)
 - Web Push com o app fechado (Supabase Edge Function + chaves VAPID; o service worker já trata o evento `push`).

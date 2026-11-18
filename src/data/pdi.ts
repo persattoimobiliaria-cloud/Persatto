@@ -21,7 +21,7 @@ export const TEMAS_PDI: {
   { tema: 'Atendimento e conversão', emoji: '📲', metrica: 'conv_lead_visita', metaSugerida: 25,
     especifica: 'Transformar mais leads em visitas agendadas',
     relevante: 'Lead que não vira visita é custo de marketing perdido',
-    acoes: ['Responder todo lead em até 5 min', 'Ligar antes de enviar mensagem', 'Oferecer 2 horários de visita na primeira conversa'] },
+    acoes: ['Responder todo lead em até 1 hora', 'Ligar antes de enviar mensagem', 'Oferecer 2 horários de visita na primeira conversa'] },
   { tema: 'Negociação e fechamento', emoji: '🤝', metrica: 'conv_visita_proposta', metaSugerida: 20,
     especifica: 'Converter mais visitas em propostas formais',
     relevante: 'Proposta é o passo que mais aproxima a venda',

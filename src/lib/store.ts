@@ -48,10 +48,10 @@ function createDemoStore(): Store {
   const listeners = new Set<() => void>();
   const notify = () => listeners.forEach((l) => l());
   try {
-    if (!localStorage.getItem(LS_PREFIX + 'seeded')) {
+    if (!localStorage.getItem(LS_PREFIX + 'seeded-v2')) {
       const seed = seedDemo();
       (Object.keys(seed) as TableName[]).forEach((t) => writeTable(t, seed[t]));
-      localStorage.setItem(LS_PREFIX + 'seeded', '1');
+      localStorage.setItem(LS_PREFIX + 'seeded-v2', '1');
     }
   } catch {
     /* ignore */
